@@ -42,4 +42,7 @@ API REST desarrollada en Laravel que implementa operaciones CRUD (Crear, Leer, A
      ```bash
      cp .env.example .env
      ```
-5. 
+5. **Generar la clave de aplicación**
+    ```bash
+    php artisan key:generate
+    ```

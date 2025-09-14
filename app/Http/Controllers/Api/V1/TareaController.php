@@ -47,7 +47,19 @@ class TareaController
     public function update(UpdateTareaRequest $request, Tarea $tarea)
     {
         $data = $request->validated();
-        $tarea->update($data);
+
+       if (empty($data)) {
+        return response()->json([
+            'message' => 'No se enviaron datos para actualizar'
+        ], 422);
+        }
+
+         $tarea->update($data);
+
+        return response()->json([
+            'message' => 'Usuario actualizado correctamente',
+            'tarea' => $tarea
+        ], 200);
     }
 
     /**

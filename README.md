@@ -123,3 +123,20 @@ Es lo que utiliza laravel para resolver y administrar clases. hace que no se ten
 Un middleware es una función que se ejecuta antes o despues de una petición http, normalmente se usa para autentificación y autorización, modificar los request o los response.
 * **¿Qué ventajas ofrece usar laravel Sanctum o Passport?**
 Sanctum es muy sencillo de configurar y utilizar como por ejemplo con personal_acces_token. facilita el desarrolló en el apartado de la autentificación, pero es usado en apps simples.
+
+
+# Datos de Prueba
+* POST -> creacion de nueva tarea / PUT misma estructura para actualizar todos los elementos
+```bash
+   {
+  "title": "Nueva tarea",
+  "descripcion": "Actualizar ejemplo"
+  "estado": "completado",
+  "fecha_limite": "2002-01-05"
+  }
+```
+* PATCH -> Editar un elemento
+ ```bash
+{
+  "title" : "Tarea actualizada
+}

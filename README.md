@@ -46,3 +46,18 @@ API REST desarrollada en Laravel que implementa operaciones CRUD (Crear, Leer, A
     ```bash
     php artisan key:generate
     ```
+6. **Crear la base de datos SQLite vacía**
+    ```bash
+    touch database/tarea.sqlite   # Linux/macOS o Git Bash
+    ```
+    ```powershell
+    echo. > database\tarea.sqlite  # Windows PowerShell
+    ```
+7. **Ejecutar migraciones y seeders**
+     ```bash
+    php artisan migrate --seed
+    ```
+8. **Ejecutar el servidor de desarollo*
+     ```bash
+    php artisan serve
+    ```

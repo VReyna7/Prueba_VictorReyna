@@ -103,7 +103,7 @@ API REST desarrollada en Laravel que implementa operaciones CRUD (Crear, Leer, A
         ```
   * Al enviar la petición resivira una respuesta que tendra el token, copielo.
     
-3.Agregar token a la cabeza
+3.Agregar token a la cabezara
   * En Postman o Thunder client:
      1. Localize la pestaña headers
      2. agregrue lo siguiente:

@@ -48,12 +48,12 @@ API REST desarrollada en Laravel que implementa operaciones CRUD (Crear, Leer, A
     ```
 6. **Crear la base de datos SQLite vacía**
     ```bash
-    touch database/tarea.sqlite   # Linux/macOS o Git Bash
+    touch database/tareas.sqlite   # Linux/macOS o Git Bash
     ```
     ```powershell
-    echo > database\tarea.sqlite  # Windows PowerShell
+    echo > database\tareas.sqlite  # Windows PowerShell
     ```
-    * Tambien es posible crear el archivo con click derecho -> nuevo. (Crear el archivo en la carpeta database, con el nombre tarea.sqlite)
+    * Tambien es posible crear el archivo con click derecho -> nuevo. (Crear el archivo en la carpeta database con el nombre tareas.sqlite)
 
 7. **Configurar .env**
      *** Editar los siguientes parametros

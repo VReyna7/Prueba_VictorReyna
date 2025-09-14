@@ -3,7 +3,8 @@
 ## Tecnologías
 * Framework: Laravel v 12
 * Database: sqlite
-
+* PHP: 8.3.16
+  
 ## Herramientas
 * Postman -> herramienta para probar endpoints de APIs (REST) enviar peticiones HTTP y ver las respuestas
 * DBeaver -> herramienta de visualización y administración de bases de datos

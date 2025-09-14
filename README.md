@@ -14,7 +14,8 @@
 API REST desarrollada en Laravel que implementa operaciones CRUD (Crear, Leer, Actualizar y Eliminar) sobre una tabla Tareas
 
 ## Instalación y configuración
-1. Clonar el repositorio 
+1. Clonar el repositorio
+
 ```bash git clone https://github.com/VReyna7/Prueba_VictorReyna.git cd Prueba_VictorReyna```  
 
 2. 

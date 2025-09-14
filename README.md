@@ -99,7 +99,6 @@ API REST desarrollada en Laravel que implementa operaciones CRUD (Crear, Leer, A
         {
           "email": "test@example.com",
           "password": "password123"
-          "name" : "Test"
         }
         ```
   * Al enviar la petición resivira una respuesta que tendra el token, copielo.

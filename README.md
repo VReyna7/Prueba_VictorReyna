@@ -58,7 +58,7 @@ API REST desarrollada en Laravel que implementa operaciones CRUD (Crear, Leer, A
 7. **Configurar .env**
      - Editar los siguientes parametros
         * SESSION_DRIVER = file
-        * Descomentar #DB_DATABASE=laravel, Y colocar DB_DATABASE = tareas.sqlite 
+        * Descomentar #DB_DATABASE=laravel, Y colocar DB_DATABASE = database/tareas.sqlite 
        
 9. **Ejecutar migraciones y seeders**
      ```bash

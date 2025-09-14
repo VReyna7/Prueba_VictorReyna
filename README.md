@@ -63,4 +63,8 @@ API REST desarrollada en Laravel que implementa operaciones CRUD (Crear, Leer, A
     ```
 
 ## Endpoints principales
-* **GET** `/api/tareas` -> Listar todas las tareas 
+* **GET** `/api/tareas` -> Listar todas las tareas
+* **POST** `/api/tareas` -> Crear una tarea
+* **GET** `/api/tareas/{id}` -> mostrar una tarea
+* **PUT/PATCH&** `/api/tareas/{id}` -> actualizar una tarea
+* **DELETE** `/api/tareas/{id}` -> eliminar una tarea

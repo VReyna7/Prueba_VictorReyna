@@ -51,7 +51,7 @@ API REST desarrollada en Laravel que implementa operaciones CRUD (Crear, Leer, A
     touch database/tarea.sqlite   # Linux/macOS o Git Bash
     ```
     ```powershell
-    echo. > database\tarea.sqlite  # Windows PowerShell
+    echo > database\tarea.sqlite  # Windows PowerShell
     ```
 7. **Ejecutar migraciones y seeders**
      ```bash

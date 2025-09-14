@@ -106,15 +106,15 @@ API REST desarrollada en Laravel que implementa operaciones CRUD (Crear, Leer, A
         
 4.Probar los endopints CRUD de la sección endpoints principales
 
-#Preguntas teóricas
-¿Cuál es la diferencia entre `hasMany` y `belongsToMany` en Eloquent?
+# Preguntas teóricas
+* ¿Cuál es la diferencia entre `hasMany` y `belongsToMany` en Eloquent?
 HasMany representa la relación de uno a muchos y belongToMany la relación muchos a muchos. normalmente estas relaciones usan una tabla intermedia.
-¿Qué es una migración y como se utiliza?
+* ¿Qué es una migración y como se utiliza?
 Una migración es una estructura de base de datos que utilizan los ORM para con un comando ejecutar y hacer la creación de dicha BDD sin necesidad de empezarla manualmente
 por ejemplo en laravel se crean en /database/migrate con php artisan make:migration nombre y se ejecutan con php artisan migrate. 
-¿Como funciona el Service Conteiner en Laravel?
+* ¿Como funciona el Service Conteiner en Laravel?
 Es lo que utiliza laravel para resolver y administrar clases. hace que no se tengan que crear instancias manualmente con new, además es util como inyección de dependencias. es muy parecido a lo que pasa con los beans en java spring boot.
-¿Que es un middleware y para que se usa?
+* ¿Que es un middleware y para que se usa?
 Un middleware es una función que se ejecuta antes o despues de una petición http, normalmente se usa para autentificación y autorización, modificar los request o los response.
-¿Qué ventajas ofrece usar laravel Sanctum o Passport?
+* ¿Qué ventajas ofrece usar laravel Sanctum o Passport?
 Sanctum es muy sencillo de configurar y utilizar como por ejemplo con personal_acces_token. facilita el desarollo en el apartado de la autentificación pero es usado en apps simples. 

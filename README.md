@@ -1,61 +1,107 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Prueba Victor Reyna 
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Tecnologías
+* Framework: Laravel v 12
+* Database: sqlite
+* PHP: 8.3.16
+  
+## Herramientas
+* Postman -> herramienta para probar endpoints de APIs (REST) enviar peticiones HTTP y ver las respuestas
+* DBeaver -> herramienta de visualización y administración de bases de datos
+* Laragon -> herramienta de entorno de desarrollo local para PHP (incluye Apache/Nginx, MySQL/MariaDB, PHP, y facilita usar Composer, Node, etc.).
 
-## About Laravel
+## Descripcion
+API REST desarrollada en Laravel que implementa operaciones CRUD (Crear, Leer, Actualizar y Eliminar) sobre una tabla Tareas
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Instalación y configuración
+1. **Clonar el repositorio**
+    
+    ```bash 
+    git clone https://github.com/VReyna7/Prueba_VictorReyna.git
+    ```
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+    ```bash
+    cd Prueba_VictorReyna
+    ```
+2. **Abrir el proyecto en un editor de código**  
+    - Recomendación: **Visual Studio Code**.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+3. **Instalar dependencias con Composer**
+    
+    ```bash
+    composer install
+    ```
+    
+4. **Crear el archivo `.env` a partir de `.env.example`**  
 
-## Learning Laravel
+   - En **Windows CMD**:
+     ```cmd
+     copy .env.example .env
+     ```
+   - En **PowerShell o Linux/macOS**:
+     ```bash
+     cp .env.example .env
+     ```
+5. **Generar la clave de aplicación**
+    ```bash
+    php artisan key:generate
+    ```
+6. **Crear la base de datos SQLite vacía**
+    ```bash
+    touch database/tarea.sqlite   # Linux/macOS o Git Bash
+    ```
+    ```powershell
+    echo. > database\tarea.sqlite  # Windows PowerShell
+    ```
+7. **Ejecutar migraciones y seeders**
+     ```bash
+    php artisan migrate --seed
+    ```
+8. **Ejecutar el servidor de desarollo*
+     ```bash
+    php artisan serve
+    ```
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Endpoints principales
+ Todos necesitan Authorization: Bearer {token}
+* **GET** `/api/tareas` -> Listar todas las tareas
+* **POST** `/api/tareas` -> Crear una tarea
+* **GET** `/api/tareas/{id}` -> mostrar una tarea
+* **PUT/PATCH&** `/api/tareas/{id}` -> actualizar una tarea
+* **DELETE** `/api/tareas/{id}` -> eliminar una tarea
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Autenticación con Sanctum
+* **Login y obtención de token**
+  - **POST** `/api/login` -> login de usuario para obtener un token
+* **Usuario pre-registrado**
+  - **name** -> `Tester`
+  - **email** -> `test@example.com`
+  - **password** -> `password123`
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Cómo probar la API con Postman o Thunderclient
+1. Abrir postman o thunder client en vs
+    * Descargar e instalar desde https://www.postman.com/downloads/
+      
+2. Configurar el login y obtener el token
+  * Crea una nueva petición POST a:
+      - ```bash
+        http://127.0.0.1:8000/api/login
+        ```
+  * En la pestaña Body, seleccionar raw -> JSON e ingesar:
+      - ```bash
+        {
+          "email": "test@example.com",
+          "password": "password123"
+          "name" : "Test"
+        }
+        ```
+  * Al enviar la petición resivira una respuesta que tendra el token, copielo.
+    
+3.Agregar token a la cabeza
+  * En Postman o Thunder client:
+     1. Localize la pestaña headers
+     2. agregrue lo siguiente:
+        * `key` : Authorization
+        * `value`: Bearer {token}, ejemplo: Bearer 1|Aalsdaldajkgjas921340rmask
+        
+4.Probar los endopints CRUD de la sección endpoints principales

@@ -79,21 +79,21 @@ API REST desarrollada en Laravel que implementa operaciones CRUD (Crear, Leer, A
   - **password** -> `password123`
 
 ## Cómo probar la API con Postman o Thunderclient
-* postman o thunder client en vs
-    - Descargar e instalar desde https://www.postman.com/downloads/
-* Configurar en login y obtener el token
-  Crea una nueva petición POST a:
-  - ```bash
-    http://127.0.0.1:8000/api/login
-    ```
-  En la pestaña Body, seleccionar raw -> JSON e ingesar:
-  - ```bash
-    {
-      "email": "test@example.com",
-      "password": "password123"
-      "name" : Test
-    }
-    ```
+1. Abrir postman o thunder client en vs
+    * Descargar e instalar desde https://www.postman.com/downloads/
+2. Configurar el login y obtener el token
+  * Crea una nueva petición POST a:
+      - ```bash
+        http://127.0.0.1:8000/api/login
+        ```
+  * En la pestaña Body, seleccionar raw -> JSON e ingesar:
+      - ```bash
+        {
+          "email": "test@example.com",
+          "password": "password123"
+          "name" : Test
+        }
+        ```
   - Al enviar la petición resivira una respuesta que tendra el token, copielo.
   -
     

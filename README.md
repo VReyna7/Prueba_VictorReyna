@@ -23,5 +23,16 @@ API REST desarrollada en Laravel que implementa operaciones CRUD (Crear, Leer, A
     ```bash
     cd Prueba_VictorReyna
     ```
-
-2. abrir el proyecto en un editor de codigo ( Recomendacion : Visual Studio Code)
+2. **abrir el proyecto en un editor de codigo ( Recomendacion : Visual Studio Code)**
+    
+3. **Abrir la consola en la ruta del proyecto y instalar dependencias**
+    ```bash
+    composer install
+    ```
+4. **Crear .env a partir de .env.example**
+    Puedes usar el copiar y pegar para cambiar el nombre a .env
+    o
+    ```bash
+    copy .env.example .env #entorno windows
+    ```
+5. 

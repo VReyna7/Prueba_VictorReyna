@@ -24,7 +24,7 @@ API REST desarrollada en Laravel que implementa operaciones CRUD (Crear, Leer, A
     cd Prueba_VictorReyna
     ```
 2. **Abrir el proyecto en un editor de código**  
-   Recomendación: **Visual Studio Code**.
+  - Recomendación: **Visual Studio Code**.
 
 3. **Instalar dependencias con Composer**
     

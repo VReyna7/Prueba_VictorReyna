@@ -29,10 +29,14 @@ API REST desarrollada en Laravel que implementa operaciones CRUD (Crear, Leer, A
     ```bash
     composer install
     ```
-4. **Crear .env a partir de .env.example**
-    Puedes usar el copiar y pegar para cambiar el nombre a .env
-    o
-    ```bash
-    copy .env.example .env #entorno windows
-    ```
+4. **Crear el archivo `.env` a partir de `.env.example`**  
+
+   - En **Windows CMD**:
+     ```cmd
+     copy .env.example .env
+     ```
+   - En **PowerShell o Linux/macOS**:
+     ```bash
+     cp .env.example .env
+     ```
 5. 

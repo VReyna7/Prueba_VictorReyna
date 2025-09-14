@@ -15,13 +15,13 @@ API REST desarrollada en Laravel que implementa operaciones CRUD (Crear, Leer, A
 
 ## Instalación y configuración
 1. Clonar el repositorio
+    
+    ```bash 
+    git clone https://github.com/VReyna7/Prueba_VictorReyna.git
+    ```
 
-```bash 
-git clone https://github.com/VReyna7/Prueba_VictorReyna.git
-```
-
-```bash
-cd Prueba_VictorReyna
-```
+    ```bash
+    cd Prueba_VictorReyna
+    ```
 
 2. abrir el proyecto en un editor de codigo ( Recomendacion : Visual Studio Code)

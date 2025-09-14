@@ -61,3 +61,6 @@ API REST desarrollada en Laravel que implementa operaciones CRUD (Crear, Leer, A
      ```bash
     php artisan serve
     ```
+
+## Endpoints principales
+* **GET** `/api/tareas` -> Listar todas las tareas 

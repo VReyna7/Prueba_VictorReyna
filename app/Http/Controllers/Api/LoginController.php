@@ -3,34 +3,28 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
+use App\Http\Requests\LoginRequest;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 
 class LoginController
 {
     //
-    public function login(Request $request)
+    public function login(LoginRequest $request)
     {
-        $this->validateLogin($request);
+        if (Auth::attempt($request->only('email','password')))
+        {
+            $user = $request->user();
 
-        if (Auth::attempt($request->only('email','password'))){
+            $user->tokens()->where('name', 'API-CLIENT')->delete();
+
+            $token = $user->createToken('API-CLIENT')->plainTextToken;
+
             return response()->json([
-                'token' => $request->user()->createToken($request->name)->plainTextToken,
+                'token' => $token,
                 'message' => 'Success',
             ]);
         }
-
         return response()->json(['meesage'=>'Unauthorized'],401);
-    }
-
-    public function validateLogin(Request $request)
-    {
-        return $request->validate(
-        [
-            'email' => 'required|email',
-            'password' =>  'required',
-            'name'=> 'required'
-        ]);
     }
 }

@@ -81,6 +81,7 @@ API REST desarrollada en Laravel que implementa operaciones CRUD (Crear, Leer, A
 ## Cómo probar la API con Postman o Thunderclient
 1. Abrir postman o thunder client en vs
     * Descargar e instalar desde https://www.postman.com/downloads/
+      
 2. Configurar el login y obtener el token
   * Crea una nueva petición POST a:
       - ```bash
@@ -94,6 +95,13 @@ API REST desarrollada en Laravel que implementa operaciones CRUD (Crear, Leer, A
           "name" : Test
         }
         ```
-  - Al enviar la petición resivira una respuesta que tendra el token, copielo.
-  -
+  * Al enviar la petición resivira una respuesta que tendra el token, copielo.
     
+3.Agregar token a la cabeza
+  * En Postman o Thunder client:
+     1. Localize la pestaña headers
+     2. agregrue lo siguiente:
+            - `key` : Authorization
+            - `value`: Bearer {token}, ejemplo: Bearer 1|Aalsdaldajkgjas921340rmask
+        
+4.Probar los endopints CRUD de la sección endpoints principales

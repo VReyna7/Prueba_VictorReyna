@@ -9,3 +9,13 @@
 * Postman -> herramienta para probar endpoints de APIs (REST) enviar peticiones HTTP y ver las respuestas
 * DBeaver -> herramienta de visualización y administración de bases de datos
 * Laragon -> herramienta de entorno de desarrollo local para PHP (incluye Apache/Nginx, MySQL/MariaDB, PHP, y facilita usar Composer, Node, etc.).
+
+## Descripcion
+API REST desarrollada en Laravel que implementa operaciones CRUD (Crear, Leer, Actualizar y Eliminar) sobre una tabla Tareas
+
+## Instalación y configuración
+1. Clonar el repositorio 
+``` git clone https://github.com/VReyna7/Prueba_VictorReyna.git ```
+`` cd Prueba_VictorReyna ``
+
+2. 

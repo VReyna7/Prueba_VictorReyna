@@ -101,7 +101,7 @@ API REST desarrollada en Laravel que implementa operaciones CRUD (Crear, Leer, A
           "password": "password123"
         }
         ```
-  * Al enviar la petición resivira una respuesta que tendra el token, copielo.
+  * Al enviar la petición recibira una respuesta que tendra el token, cópielo .
     
 3.Agregar token a la cabezara
   * En Postman o Thunder client:

@@ -1,6 +1,6 @@
-##Prueba Victor Reyna 
+# #Prueba Victor Reyna 
 
-##Tecnologías
+## Tecnologías
 *Framework: Laravel v 12
 *Database: sqlite
 

@@ -18,7 +18,10 @@ API REST desarrollada en Laravel que implementa operaciones CRUD (Crear, Leer, A
 
 ```bash 
 git clone https://github.com/VReyna7/Prueba_VictorReyna.git
-cd Prueba_VictorReyna
-```  
+```
 
-2. 
+```bash
+cd Prueba_VictorReyna
+```
+
+2. abrir el proyecto en un editor de codigo ( Recomendacion : Visual Studio Code)

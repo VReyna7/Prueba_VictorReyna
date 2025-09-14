@@ -53,11 +53,18 @@ API REST desarrollada en Laravel que implementa operaciones CRUD (Crear, Leer, A
     ```powershell
     echo > database\tarea.sqlite  # Windows PowerShell
     ```
-7. **Ejecutar migraciones y seeders**
+    *Tambien posible crear el archivo con click derecho -> nuevo. (Crear el archivo en la carpeta database, con el nombre tarea.sqlite)
+
+7. **Configurar .env**
+     *** Editar los siguientes parametros
+        * SESSION_DRIVER = file
+        * Descomentar #DB_DATABASE=LARAVEL, Y colocar DB_DATABAsE = tareas.sqlite 
+       
+9. **Ejecutar migraciones y seeders**
      ```bash
     php artisan migrate --seed
     ```
-8. **Ejecutar el servidor de desarollo*
+10. **Ejecutar el servidor de desarollo*
      ```bash
     php artisan serve
     ```

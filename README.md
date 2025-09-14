@@ -53,7 +53,7 @@ API REST desarrollada en Laravel que implementa operaciones CRUD (Crear, Leer, A
     ```powershell
     echo > database\tarea.sqlite  # Windows PowerShell
     ```
-    *Tambien posible crear el archivo con click derecho -> nuevo. (Crear el archivo en la carpeta database, con el nombre tarea.sqlite)
+    * Tambien es posible crear el archivo con click derecho -> nuevo. (Crear el archivo en la carpeta database, con el nombre tarea.sqlite)
 
 7. **Configurar .env**
      *** Editar los siguientes parametros

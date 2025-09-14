@@ -63,8 +63,13 @@ API REST desarrollada en Laravel que implementa operaciones CRUD (Crear, Leer, A
     ```
 
 ## Endpoints principales
+ Todos necesitan Authorization: Bearer {token}
 * **GET** `/api/tareas` -> Listar todas las tareas
 * **POST** `/api/tareas` -> Crear una tarea
 * **GET** `/api/tareas/{id}` -> mostrar una tarea
 * **PUT/PATCH&** `/api/tareas/{id}` -> actualizar una tarea
 * **DELETE** `/api/tareas/{id}` -> eliminar una tarea
+
+## Autenticación con Sanctum
+* **Login y obtención de token**
+  -**POST** `/api/login` -> login de usuario para obtener un token

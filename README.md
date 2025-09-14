@@ -72,8 +72,8 @@ API REST desarrollada en Laravel que implementa operaciones CRUD (Crear, Leer, A
 
 ## Autenticación con Sanctum
 * **Login y obtención de token**
-  -**POST** `/api/login` -> login de usuario para obtener un token
+  - **POST** `/api/login` -> login de usuario para obtener un token
 * **Usuario pre-registrado**
-  -**name** -> `Tester`
-  -**email** -> `test@example.com`
-  -**password** -> `password123`
+  - **name** -> `Tester`
+  - **email** -> `test@example.com`
+  - **password** -> `password123`

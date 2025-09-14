@@ -55,8 +55,8 @@ API REST desarrollada en Laravel que implementa operaciones CRUD (Crear, Leer, A
     ```
     * Tambien es posible crear el archivo con click derecho -> nuevo. (Crear el archivo en la carpeta database con el nombre tareas.sqlite)
 
-7. **Configurar .env**
-     *** Editar los siguientes parametros
+7. ** Configurar .env **
+     - Editar los siguientes parametros
         * SESSION_DRIVER = file
         * Descomentar #DB_DATABASE=LARAVEL, Y colocar DB_DATABAsE = tareas.sqlite 
        
